@@ -27,6 +27,7 @@ body {
   display: none; }
 
 .card {
+  max-width: 37.5rem;
   width: 90%;
   background-color: #252d37;
   margin: 0 auto;
@@ -49,7 +50,7 @@ body {
   color: white; }
 
 .card-front-sub-heading {
-  color: #7c8798;
+  color: #959eac;
   font-size: 1.5rem;
   line-height: 1.5; }
 
@@ -68,7 +69,8 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
     .card-front-ratings-rating:hover {
       background-color: #959eac;
       color: white; }
@@ -85,11 +87,11 @@ body {
   padding: 1.4rem 0;
   letter-spacing: 0.2rem;
   font-weight: 700;
-  color: white;
-  margin-bottom: 1rem; }
+  color: white; }
   .card-front-submit-btn:hover {
     background-color: white;
-    color: #fb7413; }
+    color: #fb7413;
+    cursor: pointer; }
 
 .card-back-img {
   display: flex;
@@ -121,6 +123,21 @@ body {
   text-align: center;
   line-height: 1.5;
   margin-bottom: 1rem; }
+
+.card-back-return-btn {
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+  text-transform: uppercase;
+  background-color: #fb7413;
+  padding: 1.4rem 0;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: white; }
+  .card-back-return-btn:hover {
+    background-color: white;
+    color: #fb7413;
+    cursor: pointer; }
 
 .attribution {
   position: absolute;

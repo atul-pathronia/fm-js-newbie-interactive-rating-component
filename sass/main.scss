@@ -1,3 +1,4 @@
+// GLOBAL CLASS
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 $color-orange: hsl(25, 97%, 53%);
@@ -32,6 +33,8 @@ body {
   height: 100vh;
 }
 
+// HELPER CLASS
+
 .mb-2 {
   margin-bottom: 2rem;
 }
@@ -41,12 +44,15 @@ body {
 }
 
 .card {
+  max-width: 37.5rem;
   width: 90%;
   background-color: $color-Dark-Blue;
   margin: 0 auto;
   border-radius: 1rem;
   padding: 2rem;
 }
+
+// CARD FRONT
 
 .card-front {
   &-img {
@@ -69,7 +75,7 @@ body {
   }
 
   &-sub-heading {
-    color: $color-Medium-Grey;
+    color: $color-Light-Grey;
     font-size: 1.5rem;
     line-height: 1.5;
   }
@@ -91,6 +97,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
 
       &:hover {
         background-color: $color-Light-Grey;
@@ -114,13 +121,15 @@ body {
     letter-spacing: 0.2rem;
     font-weight: 700;
     color: $color-White;
-    margin-bottom: 1rem;
     &:hover {
       background-color: $color-White;
       color: $color-orange;
+      cursor: pointer;
     }
   }
 }
+
+// CARD BACK
 
 .card-back {
   &-img {
@@ -158,6 +167,23 @@ body {
     text-align: center;
     line-height: 1.5;
     margin-bottom: 1rem;
+  }
+
+  &-return-btn {
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: $color-orange;
+    padding: 1.4rem 0;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: $color-White;
+    &:hover {
+      background-color: $color-White;
+      color: $color-orange;
+      cursor: pointer;
+    }
   }
 }
 
