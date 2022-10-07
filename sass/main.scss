@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+$color-orange: hsl(25, 97%, 53%);
+$color-White: hsl(0, 0%, 100%);
+$color-Light-Grey: hsl(217, 12%, 63%);
+$color-Medium-Grey: hsl(216, 12%, 54%);
+$color-Dark-Blue: hsl(213, 19%, 18%);
+$color-Very-Dark-Blue: hsl(216, 12%, 8%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: $color-Very-Dark-Blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  width: 90%;
+  background-color: $color-Dark-Blue;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card-front {
+  &-img {
+    background-color: rgba($color-Very-Dark-Blue, $alpha: 0.4);
+    width: 2rem;
+    height: 2rem;
+    padding: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 1.5rem;
+    }
+  }
+
+  &-heading {
+    color: $color-White;
+  }
+
+  &-sub-heading {
+    color: $color-Medium-Grey;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  &-ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-rating {
+      background-color: rgba($color-Very-Dark-Blue, $alpha: 0.4);
+      color: $color-Light-Grey;
+      width: 2rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      height: 2rem;
+      padding: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: $color-Light-Grey;
+        color: $color-White;
+      }
+
+      &:active {
+        background-color: $color-orange;
+        color: $color-White;
+      }
+    }
+  }
+
+  &-submit-btn {
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: $color-orange;
+    padding: 1.4rem 0;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: $color-White;
+    margin-bottom: 1rem;
+    &:hover {
+      background-color: $color-White;
+      color: $color-orange;
+    }
+  }
+}
+
+.card-back {
+  &-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    img {
+      width: 12rem;
+    }
+  }
+
+  &-final-rating {
+    border-radius: 2rem;
+    display: block;
+    background-color: rgba($color-Very-Dark-Blue, $alpha: 0.4);
+    color: rgba($color-orange, $alpha: 0.6);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  &-heading {
+    color: $color-White;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  &-sub-heading {
+    color: $color-Light-Grey;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+}
